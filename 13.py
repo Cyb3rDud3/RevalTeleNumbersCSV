@@ -46,6 +46,8 @@ client(JoinChannelRequest(target_group))
 phone = random phone numbers. better using israeli phone csv's
 client id must be random
 
+Future updates == להשתמש ולהתאים את הסקריפט לפי טווחי מספור ניידים
+טווחי מספור ניידים = https://data.gov.il/dataset/assigning-mobile-numbering-ranges/resource/caa80822-5880-4bbf-808a-06d7f53c4ae5
 """
 
 count = 0000	
