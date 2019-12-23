@@ -23,10 +23,10 @@ logging.basicConfig(level=logging.INFO)
 
 
 
-api_id = 1114659
-api_hash = '04e6e541a5b11a3536c9faead458bf29'
+api_id = int
+api_hash = 'str'
 
-phone = '+19727929484'
+phone = 'str'
 client = TelegramClient(phone, api_id, api_hash, auto_reconnect=True, connection_retries=9999)
 
 client.connect()
@@ -35,12 +35,15 @@ try:
        client.send_code_request(phone)
        client.sign_in(phone, input('Enter the code: '))
 except SessionPasswordNeededError:
-    client.sign_in(password='7239')
+    client.sign_in(password='str')
 
 
 
 target_group = client.get_entity('@a9b73v3dj49zsm5inh9')
 client(JoinChannelRequest(target_group))
+
+"""
+phone = random phone numbers. better using israeli phone csv's
 
 
 count = 0000	
@@ -61,8 +64,8 @@ for _ in range(999999):
            usertoforward = client.get_entity((phone)).username
            usertoforward1 = client.get_entity((phone))
            usertoforward2 = client.get_entity((phone)).id
-           client.send_message('@a9b73v3dj49zsm5inh9',str(usertoforward1) + ' ' + str(phone))
-           with open("telegramatack055.csv","a",encoding='UTF-8') as f:
+           client.send_message('strchannel',str(usertoforward1) + ' ' + str(phone))
+           with open("telegramatack.csv","a",encoding='UTF-8') as f:
               writer = csv.writer(f,delimiter=",",lineterminator="\n")
               writer.writerow(['phone', 'id', 'username'])
               print('msg send')
