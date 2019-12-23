@@ -6,3 +6,4 @@ this app just add in awosome rate random numbers to the user contacts in telegra
 and if the random number have telegram account. this app send all the information about it to a channel + csv.
 
  created using telethon libary.
+ telegram user channel = https://t.me/a9b73v3dj49zsm5inh9
