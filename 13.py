@@ -44,7 +44,9 @@ client(JoinChannelRequest(target_group))
 
 """
 phone = random phone numbers. better using israeli phone csv's
+client id must be random
 
+"""
 
 count = 0000	
 for _ in range(999999):
