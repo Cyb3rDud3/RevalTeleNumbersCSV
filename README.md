@@ -1,6 +1,6 @@
 # RevalTeleNumbersCSV
 poc.
-This app can reval numbers of telegram users and write them to csv.
+This app can reval telegram user information for given number and write them to csv.
 
 the app does that by adding a significant fraction of a region's assigned phone numbers. so you need to configure the phone str.
 
