@@ -9,7 +9,6 @@ from telethon.tl.functions.contacts import GetContactsRequest
 from telethon.tl.types import InputPhoneContact
 from telethon import TelegramClient, events
 from telethon.errors import SessionPasswordNeededError
-
 from telethon import utils
 import sys
 import csv
@@ -38,12 +37,8 @@ except SessionPasswordNeededError:
     client.sign_in(password='str')
 
 
-
-target_group = client.get_entity('@a9b73v3dj49zsm5inh9')
-client(JoinChannelRequest(target_group))
-
 """
-phone = random phone numbers. better using israeli phone csv's
+phone = random phone numbers. configure your own.
 client id must be random
 
 Future updates == להשתמש ולהתאים את הסקריפט לפי טווחי מספור ניידים
@@ -63,17 +58,17 @@ for _ in range(999999):
            last_name='none')]))
 
      
-           print('adding {} as {}'.format(phone, count))
+           print(f'adding {phone} as {count}')
            time.sleep(10)
            usertoforward = client.get_entity((phone)).username
            usertoforward1 = client.get_entity((phone))
            usertoforward2 = client.get_entity((phone)).id
-           client.send_message('strchannel',str(usertoforward1) + ' ' + str(phone))
            with open("telegramatack.csv","a",encoding='UTF-8') as f:
               writer = csv.writer(f,delimiter=",",lineterminator="\n")
               writer.writerow(['phone', 'id', 'username'])
-              print('msg send')
-              print('round number: ' + str(count))
+              # extra header between every row
+              print('i caguht one!')
+              print(f'round number : {count}\n phone added: {phone}\n username: {usertoforward}')
               writer.writerow([phone, usertoforward2, usertoforward])
         except ValueError:
             print('no entity found')
