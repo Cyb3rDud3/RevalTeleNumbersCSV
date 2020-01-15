@@ -21,6 +21,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 
+#TODO == removing telethon.sync and configuring asynchronous functions.
 
 api_id = int
 api_hash = 'str'
@@ -60,6 +61,7 @@ for _ in range(999999):
      
            print(f'adding {phone} as {count}')
            time.sleep(10)
+           # 10 secends sleep is crucial! DO NOT USE LESS THAN 10
            usertoforward = client.get_entity((phone)).username
            usertoforward1 = client.get_entity((phone))
            usertoforward2 = client.get_entity((phone)).id
