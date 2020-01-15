@@ -6,7 +6,7 @@ the app does that by adding a significant fraction of a region's assigned phone 
 
 it work and depend on CVE-2019-15514.
 
-if the random number have telegram account. this app send all the information about it to a channel\ + csv.
+if the random number have telegram account. this app write his username, id, and phone number to csv file.
 you could also give a specific phone number to look for.
 
  created using telethon libary.
