@@ -39,7 +39,7 @@ except SessionPasswordNeededError:
 
 
 """
-phone = random phone numbers. configure your own.
+phone = random phone numbers. configure your own. 
 client id must be random
 
 Future updates == להשתמש ולהתאים את הסקריפט לפי טווחי מספור ניידים
